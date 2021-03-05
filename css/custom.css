@@ -1,0 +1,149 @@
+/* Demo 2 */
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'UhBeecharming';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  line-height: 1em;
+  
+}
+
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-plus-circle:before { content: '\50'; } /* 'P' */
+.icon-forward:before { content: '\47'; } /* 'G' */
+.icon-eye:before { width: 180px; content: '미림식당';  font-family: 'Y_Spotlight';} /* 'V' */
+.icon-search:before { content: '\5a'; } /* 'Z' */
+.icon-link:before { content: '🍴'; } /* 'L' */
+
+.demo-2 .grid {
+    width: 1200px;
+    margin: 30px auto;
+}
+/* 1600 100 (1줄에 3칸) + (간격띄우기)*/
+.demo-2 .uc-container {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin: 100px;
+    margin-top: 50px;
+}
+
+.demo-2 .uc-single, 
+.demo-2 .uc-final,
+.demo-2 .uc-initial-content,
+.demo-2 .uc-back,
+.demo-2 .uc-front {
+    background: #979797 url(../images/noise.png) repeat top left; /*변신색깔*/
+}
+
+.demo-2 .icon-eye {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 4px;
+    font-size: 30px;
+    color: transparent;
+    color: rgba(255,255,255,0);
+    width: 100%;
+    height: 100%;
+    line-height: 145px;
+    text-align: center;
+    background: rgba(41,166,170,0);
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.no-touch .demo-2 .uc-initial-content:hover .icon-eye {
+    color: rgba(255,255,255,0.8);
+    background: rgba(89, 92, 92, 0.7); /*그라데이션*/
+}
+
+.demo-2 .uc-initial-content img {
+    display: block;
+}
+
+.demo-2 .title {
+    position: absolute;
+    background: rgba(255,255,255,0.9);
+    color: black;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+.demo-2 .title .text_top {
+    font-family: 'Y_Spotlight';
+    font-size: 20px;
+}
+
+.demo-2 .title .text_bottom {
+    font-family: 'Y_Spotlight';
+    font-size: 17px;
+}
+
+.demo-2 .icon-link {
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    text-indent: 2px;
+}
+
+.demo-2 .icon-cancel {
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    line-height: 15px;
+    font-size: 18px;
+    color: #fff;
+    opacity: 1;
+    width: 18px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+
+.demo-2 .icon-cancel:hover {
+    background: rgba(0,0,0,1);
+}
+
+.demo-2 .uc-current .uc-container{
+
+}
+
+.container {
+    margin-bottom: 1400px;
+}

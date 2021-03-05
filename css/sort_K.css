@@ -1,0 +1,120 @@
+*, *:before, *:after {
+  padding:0;
+  margin:0;
+}
+
+ul,ol,li {list-style: none;}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Y_Spotlight';
+  font-size: 30px;
+  font-weight: 300;
+}
+
+body, html {
+  width:100%;
+  height:100%;
+}
+
+body div li a {
+  text-decoration-line: none; 
+  color: #333;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-family: 'BMEuljiro10yearslater';
+  font-weight:300;
+  font-size: 80px;
+  margin-top: 130px;
+  margin-left: 100px;
+}
+
+.sidebar-btn {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="sidebar-btn"] {
+  position: fixed;
+  left: 15px; 
+  top: 15px;
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  background-image: url("../img/first_img/미림식당_집게자석.png");
+  background-size: contain;
+}
+
+.sidebar-btn + label, .content {
+  transition: left 0.1s;
+}
+
+.sidebar-btn:checked + label {
+  left: 245px;
+}
+
+.sidebar-btn:checked ~ .content {
+  left: 230px;
+}
+
+.sidebar {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  line-height: 0;
+  background: url("../img/first_img/미림식당_화이트보드.png");
+
+}
+
+.sidebar li {
+  padding:1em;
+  color: #333;
+  width:300px;
+  font-family: 'Y_Spotlight';
+  font-weight:400;  
+}
+
+.content{
+  list-style-type: none;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  overflow: auto;
+  background: url("../img/second_img/미림식당-칠판4\ \(2\).png");
+
+}
+
+@font-face {
+  font-family: 'Y_Spotlight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { /*배민을지로체 10년후*/
+  font-family: 'BMEuljiro10yearslater';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/BMEuljiro10yearslater.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { /*완도희망체*/
+  font-family: 'WandohopeB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
