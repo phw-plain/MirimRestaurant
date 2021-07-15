@@ -31,7 +31,7 @@
 * DEVELOPER
   * HyeWon Park - [s2028@e-mirim.hs.kr], [https://github.com/phw-plain]
   * SuYeon Park - [s2026@e-mirim.hs.kr], [https://github.com/Suyeon04]
-  * MinJeong Park - [s2029@e-mirim.hs.kr], [https://github.com/waawa04]
+  * MinJeong Seo - [s2029@e-mirim.hs.kr], [https://github.com/waawa04]
   * NaRa Jeong - [w2016@e-mirim.hs.kr], [https://github.com/jeongnara]
 * DESIGNER
   * HaNa Lee - [d2034@e-mirim.hs.kr]
